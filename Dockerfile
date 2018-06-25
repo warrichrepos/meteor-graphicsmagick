@@ -1,4 +1,4 @@
-FROM abernix/meteord:node-8-base
+FROM abernix/meteord:node-8.11.2-base
 
 RUN apt-get update && apt-get install -y \
 	graphicsmagick \

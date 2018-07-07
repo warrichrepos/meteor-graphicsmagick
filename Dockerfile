@@ -1,6 +1,7 @@
 FROM abernix/meteord:node-8.4.0-base
-
-RUN apt-get update && apt-get install -y \
+RUN echo "deb http://http.debian.net/debian jessie-backports main contrib non-free" >> /etc/apt/sources.list \
+#RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list \
+	apt-get -y update && apt-get install -y \
 	graphicsmagick \
 	graphicsmagick-imagemagick-compat \
 	ffmpeg \
